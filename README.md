@@ -1,7 +1,9 @@
 **Talk-to-ChatGPT** is a Google Chrome and Microsoft Edge extension that allows users to talk with the ChatGPT AI using their voice (speech recognition), and listen to the bot's answer with a voice (text-to-speech), rather than just by typing. With this tool, users can speak to the AI and receive spoken responses, making the interaction feel more natural and conversational. This allows you to have your own personal assistant in the style of Iron Man's Jarvis, which is fun, but it's also a great way to help the elderly and people with disabilities interact with ChatGPT. **As of version 2.6, we now support ElevenLabs API integration, which means you can create your own voices for text-to-speech!**
 
-We need to change this with adding a feature, that the output will be saved as a doc in users app. 
-app.speaq.com to access your creations. 
+**We need to change this with adding a features:**
+1. The output if file was requested will be saved as a file in user's app using a webhook.
+2. if there is a rule inside the app it will be sent to that rule.
+
 
 
 After installing the extension, open or reload the ChatGPT page ( https://chat.openai.com/ ) and you should be seeing a 'Start' button on the top right corner of the page. After you click Start, you will be asked for permission to use your Microphone. This is required to enable voice recognition.
@@ -30,45 +32,11 @@ If the extension is temporarily unavailable (this can happen when OpenAI make br
 2. Extract the .zip file in a folder somewhere
 3. Follow this tutorial to install the extension in Chrome/Edge in dev mode: https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/
 
-# FAQ
 
-**Q: Which web browsers are supported?** A: This extension is designed for Google Chrome and Microsoft Edge, desktop version only. The extension will not work in any other web browser, especially not mobile browsers, because these browsers do not support the necessary APIs for speech recognition and speech synthesis.
-
-**Q: Can you make it speak faster or in a different voice or language?** A: Yes, use the settings menu. You can select a variety of settings among which the speech rate, voice type, and language.
-
-**Q: What is the purpose of this project?**
-A: Originally, it was mostly a fun proof of concept. This AI is mind-bogglingly intelligent and I had a deep desire to converse with it orally, to make it more interesting. Surely OpenAI themselves will make a proper voice-controlled version of ChatGPT in the future, at which point my project will be rendered useless. For now, it seems to be helping people with disabilities / visually impaired people, so I'm going to be actively working on the project for as long as I can, as a form of contribution to society.
-
-**Q: Is it safe to use?**
-A: Yes, it's simple javascript code that will execute only in the context of the ChatGPT webpage. It doesn't request any particular permissions, and it is fully open source. As soon as you navigate away from ChatGPT, everything is cleared, except for the addon settings.
-
-**Q: Will it always work?**
-A: it might not work indefinitely, and here's why. The code is based on the current HTML structure of the ChatGPT page. If OpenAI change the HTML code, this project will likely stop working. I will probably keep updating it to maintain compatibility, but I'm not sure I'll be doing that forever. If you want to contribute to the project you are more than welcome to submit your own changes through Github.
-
-**Q: I have an error or a problem...**
-A: Feel free to update the javascript yourself and propose changes on Github, or simply report the issue if you aren't a programmer.
-
-**Q: Can I make changes to your code?**
-A: Yes, feel free to make changes, and do whatever you want, commit, fork, just have fun.
 
 **Q: How do I know what languages are supported?**
 A: this is entirely based on the web browser APIs (Google Chrome, Microsoft Edge), so you need to ask Google or Microsoft, as I cannot provide an up-to-date answer. I've only tested it with English, French, and Chinese. The languages in the settings menu are the same ones found on the Google and Edge demos.
 
-# Press coverage
-
-Talk-to-ChatGPT has been receiving press coverage since its release. It is currently featured on the following sites:
-
-* BGR.com - https://bgr.com/tech/free-talk-to-chatgpt-chrome-extension-gives-ai-a-voice/
-* GeekFlare - https://geekflare.com/best-chatgpt-chrome-extensions/
-* NerdsChalk - https://nerdschalk.com/talk-to-chatgpt/
-* MakeUseOf - https://www.makeuseof.com/chatgpt-chrome-extensions-better-ai-prompts-answers-in-browsers/
-* TechBriefly - https://techbriefly.com/2023/03/30/how-to-talk-to-chatgpt/
-* Skool.com - https://www.skool.com/chatgpt/fancy-a-real-time-voice-conversation-with-chatgpt
-* GBAtemp - https://gbatemp.net/threads/talk-to-chatgpt-actual-vocal-discussion-with-an-ai-using-voice-recognition-and-text-to-speech-in-chrome.622942/
-* JustGeek - https://www.justgeek.fr/talk-to-chatgpt-discuter-a-voix-haute-avec-chatgpt-103657/
-* Comment Ca Marche - https://www.commentcamarche.net/informatique/technologies/27295-application-et-extension-vocale-chatgpt-de-nouveaux-outils-pour-l-ia/#talk-to-chatgpt--discuter-a-haute-voix-avec-lia
-* Le Blog du Moderateur - https://www.blogdumoderateur.com/meilleures-extensions-chrome-chatgpt/
-* This list will be updated over time.
 
 # Change log
 
